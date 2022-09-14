@@ -1,0 +1,6 @@
+if tweets
+    each tweet in tweets
+          div(class="card tweet-element mb-2")
+            a(class="card-body" href="/tweets/tweet/edit/"+tweet._id)= tweet.content
+            div
+                button(type="button" class="btn btn-danger" tweetId= tweet._id) X
